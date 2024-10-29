@@ -3,7 +3,8 @@ package com.bank;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+
+public class App {
     public static void main(String[] args) {
         // Creating account objects
         SavingsAccount savingsAccount = new SavingsAccount("Amy", 1000, 0, 0.03);
