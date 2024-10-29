@@ -2,9 +2,9 @@ package com.bank;
 
 public class BankAccount {
 
-    private String accountHolderName;
-    private double balance;
-    private double minimumBalance;
+    protected String accountHolderName;
+    protected double balance;
+    protected double minimumBalance;
 
     // Constructor
     public BankAccount(String accountHolderName, double balance, double minimumBalance) {
@@ -16,6 +16,23 @@ public class BankAccount {
     // Getter for balance
     public double getBalance() {
         return balance;
+    }
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    // Overriding toString() method
+    @Override
+    public String toString() {
+        return "Account{" +
+                "Account Holder='" + accountHolderName + '\'' +
+                ", Balance=" + balance +
+                ", Minimum Balance=" + minimumBalance +
+                '}';
     }
 
     // Deposit method

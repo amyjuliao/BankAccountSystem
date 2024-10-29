@@ -19,4 +19,14 @@ public class SavingsAccount extends BankAccount {
     public void addInterest() {
         deposit(getBalance() * interestRate / 100);
     }
+    // Overriding toString() method
+    @Override
+    public String toString() {
+        return "SavingsAccount{" +
+                "Account Holder='" + getAccountHolderName() + '\'' +
+                ", Balance=" + getBalance() +
+                ", Minimum Balance=" + minimumBalance +
+                ", Interest Rate=" + interestRate +
+                '}';
+    }
 }

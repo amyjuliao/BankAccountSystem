@@ -21,4 +21,14 @@ public class CurrentAccount extends BankAccount {
     public double getMaxWithdrawalAmount() {
         return maxWithdrawalAmount;
     }
+    // Overriding toString() method
+    @Override
+    public String toString() {
+        return "CurrentAccount{" +
+                "Account Holder='" + getAccountHolderName() + '\'' +
+                ", Balance=" + getBalance() +
+                ", Minimum Balance=" + minimumBalance +
+                ", Max Withdrawal Amount=" + maxWithdrawalAmount +
+                '}';
+    }
 }
